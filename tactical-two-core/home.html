@@ -1,0 +1,808 @@
+<section id="home" class="home-page-content page-content">
+    <section class="homepage-slider">
+		<!--START: home_carousel-->
+		<section class="homepage-slider">
+
+			<div class="homeCarousel flexslider" data-animation="[hc_effect]" data-slideshowspeed="[hc_delay]">
+				<script>
+						 //Slide JSON format
+						/*
+						{                         
+							"background_image": "/assets/images/slider1.png",
+							"button_link": "#",
+							"button_text": "Shop now",
+							"details": "Military Gear and Supplies",
+							"front_image": "#",
+							"heading": "Stocked & Loaded"
+						}
+						*/
+
+						var slides = '[';
+						//<!--START: carousel-->
+
+						var imgVal = '[image]';
+
+						var checkVal = check(imgVal);
+
+						if(checkVal == true){
+							slides += '[image],';
+							console.log('Correct Json Format');
+						}else{
+							console.log('Incorrect Json Format');
+						}
+
+						//<!--END: carousel-->
+						//remove last comma (,)
+						slides = slides.substring(0, slides.length - 1);
+						slides = slides + ']';
+
+					function check(imgVals){
+
+						var specialChars = "{}";
+
+						for(i = 0; i < specialChars.length;i++){
+							if(imgVals.indexOf(specialChars[i]) > -1){
+								return true;
+							}
+						}
+						return false;
+					}
+				</script>
+
+				<div id="hp-slide-format" class="hidden">
+					<div class="container">
+						<div class="row hp-slide-content">
+							<div>
+								<div class="hp-slider-text-outer">
+									<div class="hp-slider-text tc-animate-me" data-animation="fadeInUp">
+										<h3></h3>
+										<p></p>
+										<div class="hp-slider-cta">
+											<a href="" class="btn btn-primary"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<ul id="hp-slides" class="slides"></ul>
+			</div>
+		</section>
+		<!--END: home_carousel-->
+    </section>
+
+    <!--START: CATEGORY_HEADER-->
+    <section class="category-header">
+        <div class="container">[CONTENT]</div>
+    </section>
+    <!--END: CATEGORY_HEADER-->
+
+    <section class="banner-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 banner-holder">
+                    <a href="#">FIREARMS</a>
+                </div>
+                <div class="col-sm-4 banner-holder">
+                    <a href="#">ACCESSORIES</a>
+                </div>
+                <div class="col-sm-4 banner-holder">
+                    <a href="#">GEAR</a>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+	<section class="brands-section">
+        <div class="container">
+            <h4 class="title">POPULAR BRANDS</h4>
+            <div id="carousel-sellers3" class="carousel slide"> 
+                <div>
+                    <a href="#">
+                        <img src="assets/templates/[template]/images/1791.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="assets/templates/[template]/images/aimpoint.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="assets/templates/[template]/images/BlackHawk.jpg">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="assets/templates/[template]/images/2monkey.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="assets/templates/[template]/images/brand5.jpg">
+                    </a>
+                </div>
+				
+				
+                <div>
+                    <a href="#">
+                        <img src="assets/templates/[template]/images/1791.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="assets/templates/[template]/images/aimpoint.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="assets/templates/[template]/images/BlackHawk.jpg">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="assets/templates/[template]/images/2monkey.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="assets/templates/[template]/images/brand5.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="home-container clearfix">
+        <div class="container">
+            <div class="col-sm-3">
+                <aside id="leftBar" class="hidden-sm hidden-xs">
+                    <!--START: LEFT_BAR_BLOCKS-->
+
+                    <!--START: TOP_SELLERS_BLOCK-->
+                    <div id="modTopSellers" class="sidebar-widget">
+                        <h4 class="widget-header">[frame_top-sellers]</h4>
+                        <div class="widget-body">
+                            <!--START: topsellers-->
+                            <!--START: topsellers_topitem-->
+                            <div class="topsellers-item topsellers-item-first product-item">
+                                <div class="img">
+                                    <a href="product.asp?itemid=[catalogid]"><img src="[thumbnail]" alt="[name]" class="img-responsive" /></a>
+                                </div>
+                                <div class="info">
+                                    <div class="name">
+                                        <a href="product.asp?itemid=[catalogid]" class="link">[name]</a>
+                                    </div>
+
+                                    <div class="price">
+                                        <!--START: ITEMPRICE-->
+                                        <span class="regular-price">[ITEMPRICE]</span>
+                                        <!--END: ITEMPRICE-->
+                                        <!--START: SALEPRICE-->
+                                        <del class="regular-price">[ITEMPRICE]</del>
+                                        <span class="sale-price">[ITEMSALEPRICE]</span>
+                                        <!--END: SALEPRICE-->
+                                    </div>
+
+                                    <!--START: product_review_average-->
+                                    <div class="reviews">
+                                        <span class="reviews-stars rating-[review_average]"></span> <span class="reviews-count">([review_count])</span>
+                                    </div>
+                                    <!--END: product_review_average-->
+                                </div>
+                            </div>
+                            <!--END: topsellers_topitem-->
+
+                            <!--START: topsellers_item-->
+                            <div class="new-release-item product-item">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="img"><a href="product.asp?itemid=[catalogid]"><img src="[thumbnail]" alt="[name]" class="img-responsive" /></a></div>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <div class="info">
+                                            <div class="name"><a href="product.asp?itemid=[catalogid]" class="link">[name]</a></div>
+
+                                            <div class="price">
+                                                <!--START: ITEMPRICE-->
+                                                <span class="regular-price">[ITEMPRICE]</span>
+                                                <!--END: ITEMPRICE-->
+                                                <!--START: SALEPRICE-->
+                                                <del class="regular-price">[ITEMPRICE]</del>
+                                                <span class="sale-price">[ITEMSALEPRICE]</span>
+                                                <!--END: SALEPRICE-->
+                                            </div>
+
+                                            <!--START: product_review_average-->
+                                            <div class="reviews">
+                                                <span class="reviews-stars rating-[review_average]"></span> <span class="reviews-count">([review_count])</span>
+                                            </div>
+                                            <!--END: product_review_average-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END: topsellers_item-->
+                            <!--END: topsellers-->
+                        </div>
+                        
+                    </div>
+                    <!--END: TOP_SELLERS_BLOCK--> 
+
+					<!--START: FRAME_MANUFACTURER-->
+                    <div id="modManufacturer" class="sidebar-widget">
+                        <h4 class="widget-header">[frame_manufacturer]</h4>
+                        <div class="widget-body">
+                            <form name="mfg" id="mfg" method="get" action="search_groups.asp">
+                                <div class="manf-select">
+                                    <select name="manf" onchange="this.form.submit();" class="form-control">
+                                        <option value="0" selected="selected">[frame_manufacturer]</option>
+                                        <!--START: manufacturer_format-->
+                                        <option value="[mfgid]">[manufacturer]</option>
+                                        <!--END: manufacturer_format-->
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--END: FRAME_MANUFACTURER-->
+                    
+
+                    <!--START: FRAME_BYPRICE-->
+                    <div id="modPrice" class="sidebar-widget">
+                        <h4 class="widget-header">[frame_byprice]</h4>
+                        <div class="widget-body">
+                            <ul class="sidebarUL">
+                                <!--START: byprice_format-->
+                                <li><a href="search_groups.asp?keyword=[id]&byprice=[id]">[title]</a></li>
+                                <!--END: byprice_format-->
+                            </ul>
+                        </div>
+                    </div>
+                    <!--END: FRAME_BYPRICE-->
+					
+					<!--START: social_icons-->
+					<div id="social-media" class="sidebar-widget">
+                        <h4 class="widget-header">[frame_social-icons-heading]</h4>
+                        <div class="widget-body">
+                            <ul class="social-icons list-unstyled list-inline">
+                            <!--START: social_link_facebook-->
+                            <li><a href="[social_link_facebook_url]" class="facebook" target="_blank" title="Like Us on Facebook"><span class="icon-facebook"></span></a></li>
+                            <!--END: social_link_facebook-->
+                            <!--START: social_link_twitter-->
+                            <li><a href="[social_link_twitter_url]" class="twitter" target="_blank" title="Follow Us on Twitter"><span class="icon-twitter"></span></a></li>
+                            <!--END: social_link_twitter-->
+                            <!--START: social_link_googleplus-->
+                            <li><a href="[social_link_googleplus_url]" class="gplus" target="_blank" title="Follow Us on Google+"><span class="icon-gplus"></span></a></li>
+                            <!--END: social_link_googleplus-->
+                            <!--START: social_link_youTube-->
+                            <li><a href="[social_link_youTube_url]" class="youtube" target="_blank" title="Subscribe to our Channel"><span class="icon-youtube"></span></a></li>
+                            <!--END: social_link_youTube-->
+                            <!--START: social_link_pinterest-->
+                            <li><a href="[social_link_pinterest_url]" class="pinterest" target="_blank" title="Follow Us on Pinterest"><span class="icon-pinterest"></span></a></li>
+                            <!--END: social_link_pinterest-->
+                            <!--START: social_link_instagram-->
+                            <li><a href="[social_link_instagram_url]" class="instagram" target="_blank" title="Follow Us on Instagram"><span class="icon-instagram"></span></a></li>
+                            <!--END: social_link_instagram-->
+                            <!--START: social_link_tumblr-->
+                            <li><a href="[social_link_tumblr_url]" class="tumblr" target="_blank" title="Follow Us on Tumblr"><span class="icon-tumblr"></span></a></li>
+                            <!--END: social_link_tumblr-->
+                            <!--START: social_link_blog-->
+                            <li><a href="[social_link_blog_url]" class="blog" target="_blank" title="Subscribe to our Blog"><span class="icon-rss"></span></a></li>
+                            <!--END: social_link_blog-->
+                        </ul>
+                        </div>
+                    </div>
+					<!--END: social_icons-->
+
+                    <!--START: LEFT_BANNER-->
+                    <div id="leftBanner" class="sidebar-widget">[LEFT_BANNER]</div>
+                    <!--END: LEFT_BANNER--> 
+
+                    <!--END: LEFT_BAR_BLOCKS-->
+                </aside>
+            </div>
+
+
+            <div class="col-sm-9">
+                <!--START: FEATURE_MENU-->
+                <section class="products-section">
+                        <h2 class="header-specials hidden">[category_Header-specials]</h2>
+
+                        <!--START: CATEGORY_ITEMS-->
+                        <div class="product-items product-items-[product-cols-number]">
+                            <!--START: ITEM_TEMPLATE_0-->
+                            [product_items]
+                            <!--END: ITEM_TEMPLATE_0-->
+                        </div>
+                        <!--END: CATEGORY_ITEMS-->
+                </section>
+                <!--END: FEATURE_MENU-->
+            </div>
+            
+            
+        </div>
+    </section>
+
+	
+	<!--START: NEW_RELEASES_BLOCK-->
+    <section class="new-release-sec">
+        <div class="container">
+            <h4 class="title">NEW RELEASES</h4>
+            <div id="carousel-sellers2" class="carousel slide"> 
+               
+                <!--START: newreleases-->
+                <!--START: newreleases_topitem-->
+                <div class="new-release-item new-releases-item-first product-item">
+                    <div class="img">
+                        <a href="product.asp?itemid=[catalogid]">
+                            <img src="[thumbnail]" alt="[name]" class="img-responsive" />
+                        </a>
+                    </div>
+                    <div class="name">
+                        <a href="product.asp?itemid=[catalogid]" class="link">[name]</a>
+                    </div>
+
+                    <div class="reviews">
+                        <!--START: product_review-->
+                        <!--START: product_review_average-->
+                        <span class="reviews-stars rating-[review_average]"></span> <span class="reviews-count">([review_count])</span>
+                        <!--END: product_review_average-->
+                        <!--END: product_review-->
+                    </div>
+
+                    <div class="price">
+                        <!--START: ITEMPRICE-->
+                        <span class="regular-price">[ITEMPRICE]</span>
+                        <!--END: ITEMPRICE-->
+                        <!--START: SALEPRICE-->
+                        <del class="regular-price">[ITEMPRICE]</del>
+                        <span class="sale-price">[ITEMSALEPRICE]</span>
+                        <span class="on-sale-badge">[product_sale]</span>
+                        <!--END: SALEPRICE-->
+                    </div>
+
+                </div>
+                <!--END: newreleases_topitem-->
+
+                <!--START: newreleases_item-->
+                <div class="new-release-item new-releases-item-first product-item">
+                    <div class="img">
+                        <a href="product.asp?itemid=[catalogid]">
+                            <img src="[thumbnail]" alt="[name]" class="img-responsive" />
+                        </a>                    
+                    </div>
+                    <div class="name">
+                        <a href="product.asp?itemid=[catalogid]" class="link">[name]</a>
+                    </div>
+
+                    <div class="reviews">
+                        <!--START: product_review-->
+                        <!--START: product_review_average-->
+                        <span class="reviews-stars rating-[review_average]"></span> <span class="reviews-count">([review_count])</span>
+                        <!--END: product_review_average-->
+                        <!--END: product_review-->
+                    </div>
+
+                    <div class="price">
+                        <!--START: ITEMPRICE-->
+                        <span class="regular-price">[ITEMPRICE]</span>
+                        <!--END: ITEMPRICE-->
+                        <!--START: SALEPRICE-->
+                        <del class="regular-price">[ITEMPRICE]</del>
+                        <span class="sale-price">[ITEMSALEPRICE]</span>
+                        <span class="on-sale-badge">[product_sale]</span>
+                        <!--END: SALEPRICE-->
+                    </div>
+
+                </div>
+                <!--END: newreleases_item-->
+                <!--END: newreleases-->
+                
+            </div>
+        </div>
+    </section>
+    <!--END: NEW_RELEASES_BLOCK-->
+
+    <section class="blog-section">
+        <div class="container">
+            <h4 class="header-specials title">OUR BLOG</h4>
+            <div class="blog-holder">
+                <!--START: blog_post-->
+                <!--START: post_title-->
+                <!--END: post_title-->
+                <div class="col-md-4 col-sm-4 col-xs-12 blog-article tc-animate-me" data-animation="fadeInUp">
+                    <a href="[pagename]">
+                        <div class="blog-img">
+                            <img src="[post_image]">
+                        </div>
+                        <div class="blog-date">
+                            [post_date]
+                        </div>
+                        <!--START: post_title-->
+                        <div class="blog-title">
+                            [subject]
+                        </div>
+                        <!--END: post_title-->
+                    </a>
+                </div>
+                <!--END: blog_post-->
+            </div>
+        </div>
+    </section>
+
+
+    <!--START: CATEGORY_FOOTER-->
+    <section class="category-footer">
+        <div class="container">[CONTENT]</div>
+    </section>
+    <!--END: CATEGORY_FOOTER-->
+
+</section>
+
+<!--START: template_scripts-->
+<script type="text/javascript" src="/assets/templates/common-core/lib/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    jQuery(function () {
+		
+        var slidesJson = jQuery.parseJSON(slides);
+		
+        jQuery(slidesJson).each(function (i, element) {
+            var slideItem = jQuery("<li></li>");
+            var slideFormat = jQuery('#hp-slide-format > div').clone();
+
+			if(element.background_image){
+				jQuery(slideItem).css('background-image', 'url('+element.background_image+')');
+			}
+			
+			if(element.heading){
+				jQuery(slideFormat).find('.hp-slider-text h3').html(element.heading);
+			}
+			
+			if(element.details){
+				jQuery(slideFormat).find('.hp-slider-text p').html(element.details);
+			}
+			
+			if(element.button_link){
+				jQuery(slideFormat).find('.hp-slider-cta a').attr('href', element.button_link);
+			}
+			
+			if(element.button_text){
+				jQuery(slideFormat).find('.hp-slider-cta a').html(element.button_text);
+			}
+			
+			
+        
+            
+            //jQuery(slideFormat).find('.hp-slider-img').append('<img src=' + element.front_image + ' alt="" />');
+    
+            jQuery(slideItem).append(slideFormat);
+
+            jQuery('#hp-slides').append(slideItem);
+        });
+
+        var $window = jQuery(window),
+		flexslider = { vars: {} };
+
+        // tiny helper function to add breakpoints
+        function getGridSize() {
+            return (window.innerWidth <= 567) ? 1 :
+                   (window.innerWidth < 992) ? 2 : 4;
+        }
+
+        $window.on("load", function () {
+            jQuery('.hp-brands-flexslider').flexslider({
+                animation: "slide",
+                controlNav: false,
+                keyboard: false,
+                itemWidth: 210,
+                itemMargin: 0,
+                minItems: getGridSize(), // use function to pull in initial value
+                maxItems: getGridSize() // use function to pull in initial value
+            });
+
+            setTimeout(function () {
+                window.dispatchEvent(new Event('resize'));
+            }, 100);
+        });
+    });
+</script>
+<script type="text/javascript" charset="utf-8">
+    jQuery(function () {
+        jQuery('.homeCarousel').flexslider({
+            animation: jQuery('.homeCarousel').attr('data-animation'),
+			slideshow: true,
+            slideshowSpeed: jQuery('.homeCarousel').attr('data-slideshowspeed'),
+            controlNav: true,
+            keyboard: false,
+			prevText: "",
+			nextText: ""
+        });
+    });
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    jQuery(function () {
+         jQuery('#carousel-sellers2, #carousel-sellers3').slick({
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            speed: 1200,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            responsive: [
+              {
+                  breakpoint: 1024,
+                  settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 3
+                  }
+              },
+              {
+                  breakpoint: 991,
+//                  settings: "unslick"
+                  settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                  }
+              },
+              {
+                  breakpoint: 767,
+//                  settings: "unslick"
+                  settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                  }
+              }
+            ]
+        });
+        
+        var carouselWidth = $('#carousel-sellers, #carousel-sellers2, #carousel-sellers3').width();
+        var carouselPad = 15 + 'px';
+        
+        $('.product-item.slick-slide').css('max-width', carouselWidth);
+        $('.product-item.slick-slide').css('padding-left', carouselPad);
+        $('.product-item.slick-slide').css('padding-right', carouselPad);
+        
+    });
+</script>
+<!--END: template_scripts-->
+
+<!--START: template_styles-->
+<link rel="stylesheet" href="/assets/templates/common-core/lib/flexslider/flexslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<style>
+    .TSnav {
+        position: relative;
+        height: 50px;
+    }
+    .slick-list {
+        margin: 0 35px;
+    }
+    /* Arrows */
+    .slick-prev,
+    .slick-next
+    {
+        font-size: 0;
+        line-height: 0;
+
+        position: absolute;
+        z-index: 1;
+        top: 25%;
+
+        display: block;
+
+        width: 25px;
+        height: 40px;
+        padding: 0;
+        cursor: pointer;
+
+        color: transparent;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    .slick-prev:hover,
+    .slick-prev:focus,
+    .slick-next:hover,
+    .slick-next:focus
+    {
+        color: transparent;
+        outline: none;
+        background: transparent;
+    }
+    .slick-prev:hover:before,
+    .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before
+    {
+        opacity: 1;
+    }
+    .slick-prev.slick-disabled:before,
+    .slick-next.slick-disabled:before
+    {
+        opacity: .25;
+    }
+
+    .slick-prev:before,
+    .slick-next:before
+    {
+        font-family: "fontello";
+        font-size: 40px;
+        line-height: 1;
+
+        opacity: .75;
+        color: #000;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .slick-prev
+    {
+        left: 5px;
+    }
+    [dir='rtl'] .slick-prev
+    {
+        right: 5px;
+        left: auto;
+    }
+    .slick-prev:before
+    {
+        content: '\f104';
+    }
+    [dir='rtl'] .slick-prev:before
+    {
+        content: '\f105';
+    }
+
+    .slick-next
+    {
+        right: 5px;
+    }
+    [dir='rtl'] .slick-next
+    {
+        right: auto;
+        left: 5px;
+    }
+    .slick-next:before
+    {
+        content: '\f105';
+    }
+    [dir='rtl'] .slick-next:before
+    {
+        content: '\f104';
+    }
+    @media(min-width: 1200px) {
+        .slick-prev,
+        .slick-next
+        {
+            top: 0%;
+            width: 35px;
+            height: 100px;
+        }
+        .slick-prev:before,
+        .slick-next:before
+        {
+            font-size: 75px;
+        }
+
+        .slick-prev
+        {
+            left: 5px;
+        }
+        [dir='rtl'] .slick-prev
+        {
+            right: 5px;
+            left: auto;
+        }
+
+        .slick-next
+        {
+            right: 5px;
+        }
+        [dir='rtl'] .slick-next
+        {
+            right: auto;
+            left: 5px;
+        }
+    }
+    /* Dots */
+    .slick-dotted.slick-slider
+    {
+    }
+
+    .slick-dots
+    {
+        position: absolute;
+        bottom: 100%;
+
+        display: block;
+
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        list-style: none;
+
+        text-align: center;
+    }
+    .slick-dots li
+    {
+        position: relative;
+
+        display: inline-block;
+
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        padding: 0;
+
+        cursor: pointer;
+    }
+    .slick-dots li button
+    {
+        font-size: 0;
+        line-height: 0;
+
+        display: block;
+
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+
+        cursor: pointer;
+
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+    }
+    .slick-dots li button:hover,
+    .slick-dots li button:focus
+    {
+        outline: none;
+    }
+    .slick-dots li button:hover:before,
+    .slick-dots li button:focus:before
+    {
+        opacity: 1;
+    }
+    .slick-dots li button:before
+    {
+        font-family: 'slick';
+        font-size: 20px;
+        line-height: 20px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 20px;
+        height: 20px;
+
+        content: '•';
+        text-align: center;
+
+        opacity: .25;
+        color: black;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .slick-dots li.slick-active button:before
+    {
+        opacity: .75;
+        color: black;
+    }
+    .product-item.slick-slide {
+        float: left !important;
+    }
+</style>
+<!--END: template_styles-->

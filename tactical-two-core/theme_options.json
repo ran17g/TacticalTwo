@@ -1,0 +1,954 @@
+{
+  "theme_name": "Tactical Two Core",
+  "selected_preset": 0,
+  "field_groups": [
+	{
+	  "name": "Default Colors"
+	},
+    {
+      "name": "Default Buttons"
+	},
+	{
+	  "name": "Top Banner"
+	},
+    {
+      "name": "Header"
+	},
+	{
+      "name": "Navigation"
+	},
+    {
+      "name": "Slider"
+	},
+	{
+      "name": "Products Lists"
+	},
+    {
+      "name": "Sales Tag"
+	},
+	{
+	  "name": "Newsletter"
+	},
+    {
+      "name": "Footer"
+	}
+  ],
+  "theme_presets": [
+    {
+      "isCustom": 0,
+      "name": "Default",
+      "fields": [
+		{
+			"label": "Background Color",
+			"name": "gord_background_color",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 0
+		},
+		{
+			"label": "Theme Color",
+			"name": "gord_theme_color",
+			"type": 2,
+			"value": "515534",
+			"group": 0
+		},
+		{
+			"label": "Title Headings",
+			"name": "gord_title_headings",
+			"type": 2,
+			"value": "515534",
+			"group": 0
+		},
+		{
+			"label": "Body Text",
+			"name": "gord_body_text",
+			"type": 2,
+			"value": "000000",
+			"group": 0
+		},
+		{
+			"label": "Text Link",
+			"name": "gord_text_link",
+			"type": 2,
+			"value": "515534",
+			"group": 0
+		},
+		{
+			"label": "Text Link Hover",
+			"name": "gord_text_link_hover",
+			"type": 2,
+			"value": "337ab7",
+			"group": 0
+		},
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		{
+			"label": "Text",
+			"name": "gord_btn_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 1
+		},
+		{
+			"label": "Text Hover",
+			"name": "gord_btn_text_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 1
+		},
+		{
+			"label": "Background",
+			"name": "gord_btn_bg",
+			"type": 2,
+			"value": "515534",
+			"group": 1
+		},
+		{
+			"label": "Background Hover",
+			"name": "gord_btn_bg_hover",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 1
+		},
+		{
+			"label": "Border",
+			"name": "gord_btn_border",
+			"type": 2,
+			"value": "515534",
+			"group": 1
+		},
+		{
+			"label": "Border Hover",
+			"name": "gord_btn_border_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 1
+		},
+		  
+		  
+		  
+		  
+		  
+		{
+			"label": "Text",
+			"name": "gord_top_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 2
+		},
+		{
+			"label": "Background",
+			"name": "gord_top_bg",
+			"type": 2,
+			"value": "212327",
+			"group": 2
+		},
+		  
+		  
+		  
+		{
+			"label": "Menu Text",
+			"name": "gord_header_mm",
+			"type": 2,
+			"value": "212327",
+			"group": 3
+		},
+		{
+			"label": "Menu Text Hover",
+			"name": "gord_header_mm_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 3
+		},
+		{
+			"label": "Search Text",
+			"name": "gord_header_sb_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 3
+		},
+		{
+			"label": "Search Text Hover",
+			"name": "gord_header_sb_text_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 3
+		},
+		{
+			"label": "Search Button Background",
+			"name": "gord_header_sb_btn",
+			"type": 2,
+			"value": "515534",
+			"group": 3
+		},
+		{
+			"label": "Search Button Background Hover",
+			"name": "gord_header_sb_btn_hover",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 3
+		},
+		{
+			"label": "Background",
+			"name": "gord_header_bg",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 3
+		},
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		{
+			"label": "Text",
+			"name": "gord_nav_text",
+			"type": 2,
+			"value": "515534",
+			"group": 4
+		},
+		{
+			"label": "Text Hover",
+			"name": "gord_nav_text_hover",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 4
+		},
+		{
+			"label": "Background",
+			"name": "gord_nav_bg",
+			"type": 2,
+			"value": "515534",
+			"group": 4
+		},
+		{
+			"label": "Background Hover",
+			"name": "gord_nav_bg_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 4
+		},
+		  
+		  
+		  
+		  
+		  
+		{
+			"label": "Title",
+			"name": "gord_slider_title",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 5
+		},
+		{
+			"label": "Text",
+			"name": "gord_slider_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 5
+		},
+		{
+			"label": "Button Text",
+			"name": "gord_slider_btn_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 5
+		},
+		{
+			"label": "Button Text Hover",
+			"name": "gord_slider_btn_text_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 5
+		},
+		{
+			"label": "Button Border",
+			"name": "gord_slider_border",
+			"type": 2,
+			"value": "515534",
+			"group": 5
+		},
+		{
+			"label": "Button Border Hover",
+			"name": "gord_slider_border_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 5
+		},
+		{
+			"label": "Button Background",
+			"name": "gord_slider_bg",
+			"type": 2,
+			"value": "515534",
+			"group": 5
+		},
+		{
+			"label": "Button Background Hover",
+			"name": "gord_slider_bg_hover",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 5
+		},
+		  
+		  
+	  
+		  
+		  
+		  
+		{
+			"label": "Product Name",
+			"name": "gord_bloglist_product_name",
+			"type": 2,
+			"value": "515534",
+			"group": 6
+		},
+		{
+			"label": "Product Name Hover",
+			"name": "gord_bloglist_product_name_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 6
+		},
+		{
+			"label": "Stars",
+			"name": "gord_stars",
+			"type": 2,
+			"value": "515534",
+			"group": 6
+		},
+		{
+			"label": "Text",
+			"name": "gord_bloglist_text",
+			"type": 2,
+			"value": "000000",
+			"group": 6
+		},
+		{
+			"label": "Button Text",
+			"name": "gord_bloglist_atc_btn",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 6
+		},
+		{
+			"label": "Button Text Hover",
+			"name": "gord_bloglist_atc_btn_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 6
+		},
+		{
+			"label": "Button Border",
+			"name": "gord_bloglist_atc_border",
+			"type": 2,
+			"value": "515534",
+			"group": 6
+		},
+		{
+			"label": "Button Border Hover",
+			"name": "gord_bloglist_atc_border_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 6
+		},
+		{
+			"label": "Button Background",
+			"name": "gord_bloglist_atc_btn_bg",
+			"type": 2,
+			"value": "515534",
+			"group": 6
+		},
+		{
+			"label": "Button Background Hover",
+			"name": "gord_bloglist_atc_btn_bg_hover",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 6
+		},
+		   
+		  
+		  
+		  
+		  
+		{
+			"label": "Text",
+			"name": "gord_saletag_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 7
+		},
+		{
+			"label": "Background Color",
+			"name": "gord_saletag_bg_color",
+			"type": 2,
+			"value": "515534",
+			"group": 7
+		},
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		{
+			"label": "Title",
+			"name": "gord_news_title",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 8
+		},
+		{
+			"label": "Button Text",
+			"name": "gord_news_btn_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 8
+		},
+		{
+			"label": "Button Text Hover",
+			"name": "gord_news_btn_text_hover",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 8
+		},
+		{
+			"label": "Button Background",
+			"name": "gord_news_btn_bg",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 8
+		},
+		{
+			"label": "Button Background Hover",
+			"name": "gord_news_btn_bg_hover",
+			"type": 2,
+			"value": "212327",
+			"group": 8
+		},
+		  
+		  
+		  
+		
+		
+		  
+		  
+		{
+			"label": "Text",
+			"name": "gord_footer_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 9
+		},
+		{
+			"label": "Header Text",
+			"name": "gord_footer_header_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 9
+		},
+		{
+			"label": "Link",
+			"name": "gord_footer_link",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 9
+		},
+		{
+			"label": "Link Hover",
+			"name": "gord_footer_link_hover",
+			"type": 2,
+			"value": "2119FF",
+			"group": 9
+		},
+		{
+			"label": "Background",
+			"name": "gord_footer_bg",
+			"type": 2,
+			"value": "515534",
+			"group": 9
+		},
+		{
+			"label": "Copyright Background",
+			"name": "gord_footer_copyright_bg",
+			"type": 2,
+			"value": "333333",
+			"group": 9
+		}
+
+		
+	
+		
+		  
+      ]
+    },
+   
+    {
+      "isCustom": 1,
+      "name": "Custom",
+      "fields": [
+		{
+			"label": "Background Color",
+			"name": "gord_background_color",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 0
+		},
+		{
+			"label": "Theme Color",
+			"name": "gord_theme_color",
+			"type": 2,
+			"value": "515534",
+			"group": 0
+		},
+		{
+			"label": "Title Headings",
+			"name": "gord_title_headings",
+			"type": 2,
+			"value": "515534",
+			"group": 0
+		},
+		{
+			"label": "Body Text",
+			"name": "gord_body_text",
+			"type": 2,
+			"value": "000000",
+			"group": 0
+		},
+		{
+			"label": "Text Link",
+			"name": "gord_text_link",
+			"type": 2,
+			"value": "515534",
+			"group": 0
+		},
+		{
+			"label": "Text Link Hover",
+			"name": "gord_text_link_hover",
+			"type": 2,
+			"value": "337ab7",
+			"group": 0
+		},
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		{
+			"label": "Text",
+			"name": "gord_btn_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 1
+		},
+		{
+			"label": "Text Hover",
+			"name": "gord_btn_text_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 1
+		},
+		{
+			"label": "Background",
+			"name": "gord_btn_bg",
+			"type": 2,
+			"value": "515534",
+			"group": 1
+		},
+		{
+			"label": "Background Hover",
+			"name": "gord_btn_bg_hover",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 1
+		},
+		{
+			"label": "Border",
+			"name": "gord_btn_border",
+			"type": 2,
+			"value": "515534",
+			"group": 1
+		},
+		{
+			"label": "Border Hover",
+			"name": "gord_btn_border_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 1
+		},
+		  
+		  
+		  
+		  
+		  
+		{
+			"label": "Text",
+			"name": "gord_top_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 2
+		},
+		{
+			"label": "Background",
+			"name": "gord_top_bg",
+			"type": 2,
+			"value": "212327",
+			"group": 2
+		},
+		  
+		  
+		  
+		{
+			"label": "Menu Text",
+			"name": "gord_header_mm",
+			"type": 2,
+			"value": "212327",
+			"group": 3
+		},
+		{
+			"label": "Menu Text Hover",
+			"name": "gord_header_mm_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 3
+		},
+		{
+			"label": "Search Text",
+			"name": "gord_header_sb_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 3
+		},
+		{
+			"label": "Search Text Hover",
+			"name": "gord_header_sb_text_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 3
+		},
+		{
+			"label": "Search Button Background",
+			"name": "gord_header_sb_btn",
+			"type": 2,
+			"value": "515534",
+			"group": 3
+		},
+		{
+			"label": "Search Button Background Hover",
+			"name": "gord_header_sb_btn_hover",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 3
+		},
+		{
+			"label": "Background",
+			"name": "gord_header_bg",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 3
+		},
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		{
+			"label": "Text",
+			"name": "gord_nav_text",
+			"type": 2,
+			"value": "515534",
+			"group": 4
+		},
+		{
+			"label": "Text Hover",
+			"name": "gord_nav_text_hover",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 4
+		},
+		{
+			"label": "Background",
+			"name": "gord_nav_bg",
+			"type": 2,
+			"value": "515534",
+			"group": 4
+		},
+		{
+			"label": "Background Hover",
+			"name": "gord_nav_bg_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 4
+		},
+		  
+		  
+		  
+		  
+		  
+		{
+			"label": "Title",
+			"name": "gord_slider_title",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 5
+		},
+		{
+			"label": "Text",
+			"name": "gord_slider_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 5
+		},
+		{
+			"label": "Button Text",
+			"name": "gord_slider_btn_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 5
+		},
+		{
+			"label": "Button Text Hover",
+			"name": "gord_slider_btn_text_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 5
+		},
+		{
+			"label": "Button Border",
+			"name": "gord_slider_border",
+			"type": 2,
+			"value": "515534",
+			"group": 5
+		},
+		{
+			"label": "Button Border Hover",
+			"name": "gord_slider_border_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 5
+		},
+		{
+			"label": "Button Background",
+			"name": "gord_slider_bg",
+			"type": 2,
+			"value": "515534",
+			"group": 5
+		},
+		{
+			"label": "Button Background Hover",
+			"name": "gord_slider_bg_hover",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 5
+		},
+		  
+		  
+	  
+		  
+		  
+		  
+		{
+			"label": "Product Name",
+			"name": "gord_bloglist_product_name",
+			"type": 2,
+			"value": "515534",
+			"group": 6
+		},
+		{
+			"label": "Product Name Hover",
+			"name": "gord_bloglist_product_name_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 6
+		},
+		{
+			"label": "Stars",
+			"name": "gord_stars",
+			"type": 2,
+			"value": "515534",
+			"group": 6
+		},
+		{
+			"label": "Text",
+			"name": "gord_bloglist_text",
+			"type": 2,
+			"value": "000000",
+			"group": 6
+		},
+		{
+			"label": "Button Text",
+			"name": "gord_bloglist_atc_btn",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 6
+		},
+		{
+			"label": "Button Text Hover",
+			"name": "gord_bloglist_atc_btn_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 6
+		},
+		{
+			"label": "Button Border",
+			"name": "gord_bloglist_atc_border",
+			"type": 2,
+			"value": "515534",
+			"group": 6
+		},
+		{
+			"label": "Button Border Hover",
+			"name": "gord_bloglist_atc_border_hover",
+			"type": 2,
+			"value": "515534",
+			"group": 6
+		},
+		{
+			"label": "Button Background",
+			"name": "gord_bloglist_atc_btn_bg",
+			"type": 2,
+			"value": "515534",
+			"group": 6
+		},
+		{
+			"label": "Button Background Hover",
+			"name": "gord_bloglist_atc_btn_bg_hover",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 6
+		},
+		   
+		  
+		  
+		  
+		  
+		{
+			"label": "Text",
+			"name": "gord_saletag_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 7
+		},
+		{
+			"label": "Background Color",
+			"name": "gord_saletag_bg_color",
+			"type": 2,
+			"value": "515534",
+			"group": 7
+		},
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		{
+			"label": "Title",
+			"name": "gord_news_title",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 8
+		},
+		{
+			"label": "Button Text",
+			"name": "gord_news_btn_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 8
+		},
+		{
+			"label": "Button Text Hover",
+			"name": "gord_news_btn_text_hover",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 8
+		},
+		{
+			"label": "Button Background",
+			"name": "gord_news_btn_bg",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 8
+		},
+		{
+			"label": "Button Background Hover",
+			"name": "gord_news_btn_bg_hover",
+			"type": 2,
+			"value": "212327",
+			"group": 8
+		},
+		  
+		  
+		  
+		
+		
+		  
+		  
+		{
+			"label": "Text",
+			"name": "gord_footer_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 9
+		},
+		{
+			"label": "Header Text",
+			"name": "gord_footer_header_text",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 9
+		},
+		{
+			"label": "Link",
+			"name": "gord_footer_link",
+			"type": 2,
+			"value": "FFFFFF",
+			"group": 9
+		},
+		{
+			"label": "Link Hover",
+			"name": "gord_footer_link_hover",
+			"type": 2,
+			"value": "2119FF",
+			"group": 9
+		},
+		{
+			"label": "Background",
+			"name": "gord_footer_bg",
+			"type": 2,
+			"value": "515534",
+			"group": 9
+		},
+		{
+			"label": "Copyright Background",
+			"name": "gord_footer_copyright_bg",
+			"type": 2,
+			"value": "333333",
+			"group": 9
+		}
+
+		
+	
+		
+		  
+      ]
+    }
+	 
+  ]
+}
